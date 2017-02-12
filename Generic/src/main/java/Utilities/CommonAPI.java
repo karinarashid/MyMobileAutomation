@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -46,4 +47,18 @@ public class CommonAPI {
         ad.quit();
 
         }
+
+    public void clickByXpath(String locator){
+        ad.findElement(By.xpath(locator)).click();
+    }
+
+    public void sleep(int sec)throws InterruptedException{
+        Thread.sleep(1000 * sec);
+        sleep(7);
+    }
+
+    public void typeByXpath(String locator, String value){
+        ad.findElementByXPath(locator).sendKeys(value);
+    }
+
 }

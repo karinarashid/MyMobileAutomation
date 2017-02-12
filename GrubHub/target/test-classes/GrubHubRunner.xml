@@ -7,11 +7,11 @@
             <!--<class name="TestLogIn.TestingLoggingInPage"/>-->
             <!--<class name="UITesting.TestingScheduleOrders"/>-->
             <!--<class name="UITesting.TestingYourOrders"/>-->
-            <!--<class name="UITesting.TestingFavorites"/>-->
+            <class name="UITesting.TestingFavorites"/>
             <!--<class name="UITesting.TestingPastOrders"/>-->
             <!--<class name="UITesting.TestingFreshSearch"/>-->
             <!--<class name="UITesting.TestingGiftCards"/>-->
-            <class name="UITesting.TestingContactUs"/>
+            <!--<class name="UITesting.TestingContactUs"/>-->
 
         </classes>
     </test>

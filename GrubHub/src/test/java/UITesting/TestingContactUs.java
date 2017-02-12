@@ -12,8 +12,9 @@ public class TestingContactUs extends NavigatingTheMenu {
 
     @Test
     public void TestingContactUs () throws InterruptedException {
-        CommonMethodsGH cm = PageFactory.initElements(ad, CommonMethodsGH.class);
-        logIn();
+
+        CommonMethodsGH commonMethodsGH = PageFactory.initElements(ad, CommonMethodsGH.class);
+        commonMethodsGH.logIn();
 
         NavigatingTheMenu ntm = PageFactory.initElements(ad, NavigatingTheMenu.class);
         uContactUs().contactUsForInfo();
